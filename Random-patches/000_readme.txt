@@ -5,4 +5,4 @@ Feel free to modify any patches as you see fit. Most of this code was "borrowed"
 
 If anything in this folder DOES break your game, plz let me know asap. Last thing i want is someone's PC bricking itself over bad code i wrote.
 
-the more game-changing patches have been moved to PatchManager/PluginData, and can be activated/deactivated in-game with the PatchManager mod.
+The more game-changing patches have been moved to PatchManager/PluginData, and can be activated/deactivated in-game with the PatchManager mod.
