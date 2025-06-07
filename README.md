@@ -4,13 +4,13 @@
 These are just a collection of configs and patches for some annoying issues I found in my KSP playthrough.
 Mostly, this mod provides VAB Organizer support for some mods and fixes the bulkhead profiles of parts in some other mods. It also fixes some issues in stock.
 
-Dependencies: Module Manager, VABOrganizer (but even if you don't have VABOrganizer, it can still fix the bulkhead profiles of some parts and remove deprecated ones)
+## Dependencies: Module Manager, VABOrganizer
+## Recommended: PatchManager (this will let you enable/disable the patches you want)
 
-You shouldn't have any problems with mod conflicts, as this is just a collection of MM patches, but if a certain patch is giving you problems, you can just delete it.
-You might also want to install KSP community fixes (https://forum.kerbalspaceprogram.com/topic/204002-18-112-kspcommunityfixes-bugfixes-and-qol-tweaks/) or else some of the manufacturer fixes may display wrong.
+You shouldn't have any problems with mod conflicts, as this is just a collection of MM patches, but if a patch is giving you problems, you can just disable it.
+You might also want to install KSP community fixes (https://forum.kerbalspaceprogram.com/topic/204002-18-112-kspcommunityfixes-bugfixes-and-qol-tweaks/), or else some of the manufacturer fixes may display wrong.
 
-If you have a craft that won't load because of removed deprecated parts, that patch can be safely deleted and the part will be back.
-
+If you have a craft that won't load because of removed deprecated parts, that patch can be safely disabled and the part will be back.
 Send me a message on the forums (https://forum.kerbalspaceprogram.com/profile/236864-munktron239/) and I'll look into any problems you may find.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
@@ -31,6 +31,7 @@ VAB Organizer configs and tweaks:
 - Stockalike Station Parts
 - TAC Life Support
 - Endurance Continued
+- RestockPlusPBR
 - Improved Stock + DLC
 
 ------------------------------------------
@@ -43,6 +44,7 @@ Bulkhead profile fixes for:
 - CryoTanks
 - DeepFreeze
 - Extraplanetary Launchpads
+- Endurance Continued
 - Far Future Technologies
 - Hullcam VDS
 - J2X Antenna
@@ -59,7 +61,7 @@ Bulkhead profile fixes for:
 - NF Spacecraft
 - Planetary Base System
 - Planetside Exploration Technologies
-- ReStock+
+- Restock+
 - Space Dust
 - Stockalike Station Parts Expansion Redux
 - System Heat
@@ -67,7 +69,7 @@ Bulkhead profile fixes for:
 - Some Stock + DLC
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
-This is one of my first "mods" so let me know if there are any issues.
+This is one of my first "mods", so let me know if there are any issues.
 Also, if you have any ideas for mods I could write configs for, let me know too! I'm always looking for ideas on what I should write code for next.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
