@@ -1,0 +1,43 @@
+// give command pods that have internal monopropellant tanks a small, monopropellant-powered fuel cell
+
+// only gives it to pods that DON'T have integrated RCS thrusters (as the monopropellant tanks would be for those instead, both would require too much plumbing)
+// reasoning: in real life, many spacecraft were powered by fuel cells. and since (most) command pods in KSP have monopropellant tanks...
+// ... it only makes sense that the pods come pre-installed with a way to use it!
+
+// stats: only 50% of the power generated, uses 1 unit of monoprop/min (~2.8 times more then the Restock+ Monoprop fuel cell)
+// they also only fill the command pods batteries up to 50% of max EC compared to the stock fuel cells 95% 
+// this is to reflect the lower energy density of monopropellant as a fuel, and to encourage you to use other power generation parts
+
+// they make for a great emergency power generator!
+
+@PART:HAS[@MODULE[ModuleCommand],@RESOURCE[MonoPropellant],!MODULE[ModuleRCS*],!MODULE[ModuleResourceConverter]]
+{
+	MODULE
+	{
+		name = ModuleResourceConverter
+
+		ConverterName = #LOC_MunksFixes_monopropCell 	// Monopropellant Fuel Cell
+		StartActionName = #autoLOC_502023 		// Start Fuel Cell
+		StopActionName = #autoLOC_502024 		// Stop Fuel Cell
+		ToggleActionName = #autoLOC_502025 		// Toggle Fuel Cell
+
+		FillAmount = 0.5				// = 0.95
+		AutoShutdown = false
+		GeneratesHeat = false
+		UseSpecialistBonus = false
+
+		INPUT_RESOURCE
+		{
+			ResourceName = MonoPropellant
+			Ratio = 0.01666667			// = 0.006
+			FlowMode = STAGE_PRIORITY_FLOW
+		}
+
+		OUTPUT_RESOURCE
+		{
+			ResourceName = ElectricCharge
+			Ratio = 0.75				// = 1.5
+			DumpExcess = false
+		}
+	}
+}

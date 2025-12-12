@@ -1,0 +1,62 @@
+//Add Class Descriptions to antennas by range.
+//Author: Gordon Dry
+
+// this is a much better version of a similar patch found in the FilterExtensions mod
+// it actually has the correct antenna classes this time
+
+// improved by munktron239
+// applies to stock CommNet only
+
+// if you do use this patch, make sure you disable the similar (worse) patch found in z_Final_FilterExtensions (if you have it)
+
+// Combinable?
+@PART:HAS[@MODULE[ModuleDataTransmitter]:HAS[#antennaCombinable[?rue]]]:NEEDS[!RemoteTech]
+{	@description ^= :^:<color=green>(Combinable)</color> :			}
+
+// Class 0: <500k
+@PART:HAS[@MODULE[ModuleDataTransmitter]:HAS[#antennaPower[<500000],#antennaType[INTERNAL]]]:NEEDS[!RemoteTech]
+{	@description ^= :^:<color=orange>Class 0 Antenna INTERNAL.</color> :	}
+@PART:HAS[@MODULE[ModuleDataTransmitter]:HAS[#antennaPower[<500000],#antennaType[DIRECT]]]:NEEDS[!RemoteTech]
+{	@description ^= :^:<color=orange>Class 0 Antenna DIRECT.</color> :	}
+@PART:HAS[@MODULE[ModuleDataTransmitter]:HAS[#antennaPower[<500000],#antennaType[RELAY]]]:NEEDS[!RemoteTech]
+{	@description ^= :^:<color=orange>Class 0 Antenna RELAY.</color> :	}
+
+// Class 1: 500K - 5M
+@PART:HAS[@MODULE[ModuleDataTransmitter]:HAS[#antennaPower[>499999],#antennaPower[<5000000],#antennaType[INTERNAL]]]:NEEDS[!RemoteTech]
+{	@description ^= :^:<color=orange>Class 1 Antenna INTERNAL.</color> :	}
+@PART:HAS[@MODULE[ModuleDataTransmitter]:HAS[#antennaPower[>499999],#antennaPower[<5000000],#antennaType[DIRECT]]]:NEEDS[!RemoteTech]
+{	@description ^= :^:<color=orange>Class 1 Antenna DIRECT.</color> :	}
+@PART:HAS[@MODULE[ModuleDataTransmitter]:HAS[#antennaPower[>499999],#antennaPower[<5000000],#antennaType[RELAY]]]:NEEDS[!RemoteTech]
+{	@description ^= :^:<color=orange>Class 1 Antenna RELAY.</color> :	}
+
+// Class 2: 5M - 2G
+@PART:HAS[@MODULE[ModuleDataTransmitter]:HAS[#antennaPower[>4999999],#antennaPower[<2000000000],#antennaType[INTERNAL]]]:NEEDS[!RemoteTech]
+{	@description ^= :^:<color=orange>Class 2 Antenna INTERNAL.</color> :	}
+@PART:HAS[@MODULE[ModuleDataTransmitter]:HAS[#antennaPower[>4999999],#antennaPower[<2000000000],#antennaType[DIRECT]]]:NEEDS[!RemoteTech]
+{	@description ^= :^:<color=orange>Class 2 Antenna DIRECT.</color> :	}
+@PART:HAS[@MODULE[ModuleDataTransmitter]:HAS[#antennaPower[>4999999],#antennaPower[<2000000000],#antennaType[RELAY]]]:NEEDS[!RemoteTech]
+{	@description ^= :^:<color=orange>Class 2 Antenna RELAY.</color> :	}
+
+// Class 3: 2 - 15G
+@PART:HAS[@MODULE[ModuleDataTransmitter]:HAS[#antennaPower[>1999999999],#antennaPower[<15000000000],#antennaType[INTERNAL]]]:NEEDS[!RemoteTech]
+{	@description ^= :^:<color=orange>Class 3 Antenna INTERNAL.</color> :	}
+@PART:HAS[@MODULE[ModuleDataTransmitter]:HAS[#antennaPower[>1999999999],#antennaPower[<15000000000],#antennaType[DIRECT]]]:NEEDS[!RemoteTech]
+{	@description ^= :^:<color=orange>Class 3 Antenna DIRECT.</color> :	}
+@PART:HAS[@MODULE[ModuleDataTransmitter]:HAS[#antennaPower[>1999999999],#antennaPower[<15000000000],#antennaType[RELAY]]]:NEEDS[!RemoteTech]
+{	@description ^= :^:<color=orange>Class 3 Antenna RELAY.</color> :	}
+
+// Class 4: 15 - 100G
+@PART:HAS[@MODULE[ModuleDataTransmitter]:HAS[#antennaPower[>14999999999],#antennaPower[<100000000000],#antennaType[INTERNAL]]]:NEEDS[!RemoteTech]
+{	@description ^= :^:<color=orange>Class 4 Antenna INTERNAL.</color> :	}
+@PART:HAS[@MODULE[ModuleDataTransmitter]:HAS[#antennaPower[>14999999999],#antennaPower[<100000000000],#antennaType[DIRECT]]]:NEEDS[!RemoteTech]
+{	@description ^= :^:<color=orange>Class 4 Antenna DIRECT.</color> :	}
+@PART:HAS[@MODULE[ModuleDataTransmitter]:HAS[#antennaPower[>14999999999],#antennaPower[<100000000000],#antennaType[RELAY]]]:NEEDS[!RemoteTech]
+{	@description ^= :^:<color=orange>Class 4 Antenna RELAY.</color> :	}
+
+// Class 5: >100G
+@PART:HAS[@MODULE[ModuleDataTransmitter]:HAS[#antennaPower[>99999999999],#antennaType[INTERNAL]]]:NEEDS[!RemoteTech]
+{	@description ^= :^:<color=orange>Class 5 Antenna INTERNAL.</color> :	}
+@PART:HAS[@MODULE[ModuleDataTransmitter]:HAS[#antennaPower[>99999999999],#antennaType[DIRECT]]]:NEEDS[!RemoteTech]
+{	@description ^= :^:<color=orange>Class 5 Antenna DIRECT.</color> :	}
+@PART:HAS[@MODULE[ModuleDataTransmitter]:HAS[#antennaPower[>99999999999],#antennaType[RELAY]]]:NEEDS[!RemoteTech]
+{	@description ^= :^:<color=orange>Class 5 Antenna RELAY.</color> :	}
