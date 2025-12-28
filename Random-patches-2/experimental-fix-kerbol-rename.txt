@@ -1,3 +1,4 @@
+// disable - breaks things
 // change from sun to kerbol??? (hey - it works!)
 @Kopernicus:LAST[Kopernicus]
 {
@@ -32,4 +33,5 @@
 			description = There’s been a considerable amount of controversy status of Plock as being a proper planet or just a lump of ice going around Kerbol. The debate is still ongoing, as most academic summits held to address the issue have devolved into, on good days, petty name calling, and on worse ones, all-out brawls.
 		}
 	}
+
 }
